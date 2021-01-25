@@ -1,1 +1,8 @@
-# twitterAnalyze
+・twitterで検索キーワードと取得期間を指定することでtweetの情報を得ることができるメソッド＞stream.py
+・stream.pyで得たファイルを使用して視覚的なグラフを作成するメソッド＞burst_analysis.pyとburst_analysis_graph.py
+・twitterの検索に必要なファイル＞rest_Api.pyとrequest_oauthlib_module.py(さらにtwitterのアクセストークンが必要です)
+・感情語の検出のために形態素解析するMeCabや著者「中村明」の感情表現辞典より抜粋したnakamura.pyを使用します。
+
+stream.pyでtweetを収集後にburst_analysis.pyを使用することで検索したキーワードのtweet数の推移がグラフとして表示されます。
+また、推移が急変した際の要因と見られる記事の見出しや引き起こされた感情語を見ることができます。
+ただし、twitterのアクセス制限を考慮するとstream.pyでtweetを収集するために膨大な時間がかかるので注意してください。
